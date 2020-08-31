@@ -5,14 +5,10 @@ import Carousel from 'react-bootstrap/Carousel';
 
 class Content extends React.Component {
 
-
-
   render() {
     return (
       <div style={{backgroundColor: "lightblue"}} className="App">
         <h1 style={{color: "blue"}}>TV Series</h1>
-
-
 
 <Carousel>
   <Carousel.Item>
@@ -48,7 +44,6 @@ class Content extends React.Component {
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>
-
         
       </div>
     );

@@ -1,6 +1,5 @@
 import React from 'react';
-import axios from 'axios'; //imported
-
+import axios from 'axios'; 
 class Create extends React.Component {
 
   constructor(props) {
@@ -8,8 +7,7 @@ class Create extends React.Component {
     this.state = {Title: '',
                   Poster: '',
                   Year: ''};
-
-                  
+            
     this.handleChangeShowTitle = this.handleChangeShowTitle.bind(this);
     this.handleChangeShowPoster = this.handleChangeShowPoster.bind(this);
     this.handleChangeShowYear = this.handleChangeShowYear.bind(this);
@@ -45,10 +43,7 @@ class Create extends React.Component {
     .then(window.location.reload())
     .catch();
   }
-
-
   
-
   render() {
     return (
       <div className="App">

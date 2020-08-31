@@ -1,6 +1,6 @@
 import React from 'react'; 
 import '../App.css';
-import axios from 'axios'; //to talk to the server 
+import axios from 'axios';
 import { thisExpression } from '@babel/types';
 
 class Edit extends React.Component {

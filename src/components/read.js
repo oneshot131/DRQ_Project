@@ -1,6 +1,6 @@
 import React from 'react'
 import TvShows from './tvshows';
-import axios from 'axios'; //imported for axios
+import axios from 'axios'; 
 
 
 class Read extends React.Component{
@@ -32,7 +32,6 @@ class Read extends React.Component{
                 <h1>Check out our hot list!</h1>
                 
                 <TvShows myTvShows={this.state.tvshows}></TvShows>
-                
             </div>
         );
     }

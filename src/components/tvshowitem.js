@@ -1,9 +1,8 @@
 import React from 'react';
 import Card, { CardImgOverlay } from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button'; //added for delete button for movie line 25 //needed for delete button
-import axios from 'axios'; //for delete button
-import{Link} from 'react-router-dom'; //for being able to change url /edit for edit button
-
+import Button from 'react-bootstrap/Button'; 
+import axios from 'axios'; 
+import{Link} from 'react-router-dom'; 
 class TvShowItem extends React.Component{
 
 constructor(){
@@ -14,7 +13,7 @@ constructor(){
 DeleteTvShow(e){
  console.log("delete clicked");
 
- axios.delete('http://localhost:4000/api/tvshows/'+this.props.tvshow._id) //returns a promise that its deleted
+ axios.delete('http://localhost:4000/api/tvshows/'+this.props.tvshow._id) 
   .then(window.location.reload())
   .catch();
 }
